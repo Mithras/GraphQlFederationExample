@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@apollo/gateway": "^0.42.3",
+    "apollo-server": "^3.4.0",
+    "node-fetch": "^2.6.5"
+  }
+}

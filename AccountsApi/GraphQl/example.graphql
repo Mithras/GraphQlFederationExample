@@ -1,0 +1,18 @@
+fragment MyAccount on Account {
+  id
+  name
+}
+query {
+  _service {
+    sdl
+  }
+  _entities(representations: [{ __typename: "Account", id: 1 }]) {
+    ...MyAccount
+  }
+  accounts {
+    ...MyAccount
+  }
+  account(id: 1) {
+    ...MyAccount
+  }
+}

@@ -1,0 +1,14 @@
+query ExampleQuery {
+  accounts {
+    id
+    name
+    articles {
+      id
+      title
+      account {
+        id
+        name
+      }
+    }
+  }
+}

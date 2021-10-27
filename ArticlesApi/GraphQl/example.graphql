@@ -1,0 +1,37 @@
+fragment MyAccount on Account {
+  __typename
+  id
+  articles {
+    __typename
+    id
+    title
+  }
+}
+fragment MyArticle on Article {
+  __typename
+  id
+  title
+  account {
+    ...MyAccount
+  }
+}
+query {
+  _service {
+    sdl
+  }
+  _entities(
+    representations: [
+      { __typename: "Article", id: 3 }
+      { __typename: "Account", id: 2 }
+    ]
+  ) {
+    ...MyArticle
+    ...MyAccount
+  }
+  articles {
+    ...MyArticle
+  }
+  article(id: 1) {
+    ...MyArticle
+  }
+}
