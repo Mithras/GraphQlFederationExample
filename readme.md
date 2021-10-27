@@ -4,17 +4,21 @@ Mostly copy-paste from https://github.com/graphql-dotnet/graphql-dotnet/pull/166
 
 # How to run
 
-1. `dotnet run --project AccountsApi`
+1. Run AccountsApi
+    
+    `dotnet run --project AccountsApi`
     
     Playground: http://localhost:4001/graphql/playground)
 
-    Example query: `./AccountsApi/GraphQl/example.graphql`
+    Example query: [example.graphql](blob/main/AccountsApi/GraphQl/example.graphql)
 
-2. `dotnet run --project ArticlesApi`
+2. Run ArticlesApi
+
+    `dotnet run --project ArticlesApi`
     
     Playground: http://localhost:4002/graphql/playground)
 
-    Example query: `./ArticlesApi/GraphQl/example.graphql`
+    Example query: [example.graphql](./blob/main/ArticlesApi/GraphQl/example.graphql)
 
 3. `npm i` then `node ./index.js`
 
