@@ -6,7 +6,9 @@ Mostly copy-paste from https://github.com/graphql-dotnet/graphql-dotnet/pull/166
 
 1. Run AccountsApi
     
-    `dotnet run --project AccountsApi`
+    ```
+    dotnet run --project AccountsApi
+    ```
     
     Playground: http://localhost:4001/graphql/playground)
 
@@ -14,19 +16,27 @@ Mostly copy-paste from https://github.com/graphql-dotnet/graphql-dotnet/pull/166
 
 2. Run ArticlesApi
 
-    `dotnet run --project ArticlesApi`
+    ```
+    dotnet run --project ArticlesApi
+    ```
     
     Playground: http://localhost:4002/graphql/playground)
 
     Example query: [example.graphql](./ArticlesApi/GraphQl/example.graphql)
 
-3. `npm i` then `node ./index.js`
+3. Run Gateway
+    
+    ```
+    cd Gateway
+    npm i
+    node ./index.js
+    ```
 
     Gateway: http://localhost:4000/
 
-    Example query: `./Gateway/example.graphql`
+    Example query: [example.graphql](./Gateway/example.graphql)
     
-    Example query logs:
+    Example logs:
     ```
     --------------------------------------------------
     POST http://host.docker.internal:4001/graphql
